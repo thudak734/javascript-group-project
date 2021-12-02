@@ -2,13 +2,9 @@
 let budget = prompt("What is your weekly budget?");
 
 let total = document.getElementById("total");
-
-
-total.innerText = `Total: $ ${budget}`;
-
-console.log(budget)
-
-
+total.innerText = `$ ${budget}`;
+// let moneySpent = sum of expenses
+// .innerText = `$ ${moneySpent}`;
 
 let fillerForBudgetDisplay = document.querySelector('h1'); //to display at top of page
 
