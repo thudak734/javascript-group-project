@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="enterBudget">
+            <h2>Enter your weekly budget</h2>
+            <p>
+            <input type="text" id="budgetInput" name="budgetInput">
+            </p>
+            <p>
+            <button type="submit">Submit</button>
+            </p>
+        </div>
+
+        <div class="budgetForm">
+            <form id="form">
+                <p>
+                  <label for="payee">Payee</label>
+                  <input type="text" name="payee" id="payee">
+                </p>
+                <p>
+                  <label for="amount">Amount:</label>
+                  <input type="number" name="amount" id="amount">
+                </p>
+                <p>
+                  <label for="category">Category</label>
+                  <select id="category">
+                    <option>Entertainment</option>
+                    <option>Food</option>
+                    <option>Clothing</option>
+                    <option>Bills</option>
+                    </select>
+                </p>
+                <p>
+                  <button type="submit">Submit</button>
+                </p>
+            </form>
+            <section>
+                <h3>Total Spent: $<span id="totalSpent"></span>
+                <h3>Amount Left in Budget: $<span id="amountLeftInBudget"></span></h3>
+                </p>
+            </section>
+        </div>
+    
+        <div class="categoryTotals">
+            <h2>Spending Totals by Category</h2>
+
+            <h4>Entertainment: $<span id="entertainmentTotal"></span></h3>
+            <h4>Food: $<span id="foodTotal"></span></h3>
+            <h4>Clothing: $<span id="clothingTotal"></span></h3>
+            <h4>Bills: $<span id="billsTotal"></span></h3>
+
+        </div>
+    </div>   
+    <script src="script.js"></script>
+</body>
+</html>
