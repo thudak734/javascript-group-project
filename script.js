@@ -1,4 +1,14 @@
 
+let budget = prompt("What is your weekly budget?");
+
+let total = document.getElementById("total");
+
+
+total.innerText = `Total: $ ${budget}`;
+
+console.log(budget)
+
+
 
 let fillerForBudgetDisplay = document.querySelector('h1'); //to display at top of page
 
@@ -19,3 +29,4 @@ submitBtn.addEventListener('submit', () => {
 
 
 });
+
