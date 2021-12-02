@@ -8,12 +8,13 @@ let food = document.getElementById("food");
 let clothing = document.getElementById("clothing");
 let bills = document.getElementById("bills");
 let misc = document.getElementById("misc");
+
 let submitBtn = document.querySelector("button");
 
 let expenditure = document.getElementById("priceInput");
+let userTotal = 0;// user weekly budget input
 
-
-submitBtn.addEventListener('click', () => {
+submitBtn.addEventListener('submit', () => {
     
 
 
