@@ -1,13 +1,9 @@
 
-let budget = prompt("What is your weekly budget?");
-
-let total = document.getElementById("total");
-
-
-total.innerText = `Total: $ ${budget}`;
-
+let budget = parseInt(prompt("What is your weekly budget?"));
 console.log(budget)
 
+let budgetInput = document.getElementById("budgetInput");
+budgetInput.innerText = budget;
 
 
 let fillerForBudgetDisplay = document.querySelector('h1'); //to display at top of page
