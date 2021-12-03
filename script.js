@@ -26,9 +26,7 @@ resetButton.addEventListener("click", () => {
 });
 
 
-
 let fillerForBudgetDisplay = document.querySelector('h1'); //to display at top of page
-
 
 
 let category = document.getElementById("category");
@@ -48,13 +46,18 @@ let mainForm = document.getElementById("mainForm");
 let amount = document.getElementById("amount");
 let userTotal = 0;// user weekly budget input
 
+let payee = document.getElementById("payee");
 
 mainForm.addEventListener('submit', event => {
     event.preventDefault();
 
-    // new element being added
-
-    
+    // test code for new element being added
+    newEntry = document.getElementById("newEntry");
+    let listItem = document.createElement("li");
+    entryInfo = payee + " | Amount Spent: " + amount + " | Category: " + category;
+    //`${payee} | Amount Spent:${amount} | Category: ${category}`;
+    listItem.innertext = entryInfo;
+    newEntry.append("listItem");
 
 
 
