@@ -54,7 +54,7 @@ mainForm.addEventListener('submit', event => {
     //// test code for new element being added
     newEntry = document.getElementById("newEntry");
     let listItem = document.createElement("li");
-    listItem.innertext = payee + " | Amount Spent: " + amount + " | Category: " + category;
+    listItem.innerText = payee.value + " | Amount: $" + amount.value + " | Category: " + category.value;
     newEntry.append(listItem);
 
     //// steve's code below
