@@ -30,7 +30,7 @@ let fillerForBudgetDisplay = document.querySelector('h1'); //to display at top o
 
 
 let category = document.getElementById("category");
-let amountLeftInBudget = document.getElementById("amountLeftInBudget"); //holds current budget
+let amountLeftInBudgetSpan = document.getElementById("amountLeftInBudget"); //holds current budget
 let entertainmentTotalSpan = document.getElementById("entertainmentTotal");
 let totalSpentSpan = document.getElementById("totalSpent");
 let foodTotalSpan = document.getElementById("foodTotal");
@@ -41,7 +41,7 @@ let entertainmentTotal = 0;
 let foodTotal = 0;
 let clothingTotal = 0;
 let billsTotal = 0;
-let currentBudget = 0;
+
 let totalSpent = 0;
 
 let mainForm = document.getElementById("mainForm");
@@ -66,8 +66,10 @@ mainForm.addEventListener('submit', event => {
     // steve's code below
 
 
+    let currentBudget = budgetInput.value;
     if(category.value === "Entertainment"){
-        currentBudget = budgetInput.value - amount.value;
+        currentBudget = currentBudget - amount.value;
+        amountLeftInBudgetSpan.innerText = currentBudget;
         entertainmentTotal += parseInt(amount.value);
         entertainmentTotalSpan.innerText = entertainmentTotal;
         totalSpent += parseInt(amount.value);
