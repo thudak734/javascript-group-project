@@ -64,9 +64,9 @@ mainForm.addEventListener('submit', event => {
 
     //// steve's code below
 
-    let currentBudget = budgetInput.value;
+    let currentBudget = budgetInput.value; //look at these
     if(category.value === "Entertainment"){
-        currentBudget = currentBudget - amount.value;
+        currentBudget = currentBudget - amount.value; //look at these
         amountLeftInBudgetSpan.innerText = currentBudget;
         entertainmentTotal += parseInt(amount.value);
         entertainmentTotalSpan.innerText = entertainmentTotal;
