@@ -178,7 +178,8 @@ section span {
         height: 100vh;
     }
     section{
-        float: left;
+        margin-top: 25px;
+        float: left; 
     }
     section h3{
         width: 500px;
@@ -186,6 +187,10 @@ section span {
     .budgetForm {
         display: flex;
         height: 200px;
+    }
+    .submitListItems{
+        margin-bottom: 5px;
+        
     }
     .categoryTotals {
         width: 50%;
