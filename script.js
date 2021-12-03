@@ -51,17 +51,13 @@ let payee = document.getElementById("payee");
 mainForm.addEventListener('submit', event => {
     event.preventDefault();
 
-    // test code for new element being added
+    //// test code for new element being added
     newEntry = document.getElementById("newEntry");
     let listItem = document.createElement("li");
-    entryInfo = payee + " | Amount Spent: " + amount + " | Category: " + category;
-    //`${payee} | Amount Spent:${amount} | Category: ${category}`;
-    listItem.innertext = entryInfo;
-    newEntry.append("listItem");
+    listItem.innertext = payee + " | Amount Spent: " + amount + " | Category: " + category;
+    newEntry.append(listItem);
 
-
-
-    // steve's code below
+    //// steve's code below
 
 
     if(category.value === "Entertainment"){
