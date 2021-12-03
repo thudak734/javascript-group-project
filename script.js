@@ -1,18 +1,3 @@
-//// prompt code and display below ////
-// let budget = parseInt(prompt("What is your weekly budget?"));
-// console.log(budget)
-// let budgetInput = document.getElementById("budgetInput");
-// budgetInput.innerText = budget;
-
-let budget = parseInt(prompt("What is your weekly budget?"));
-
-
-let total = document.getElementById("total");
-
-
-total.innerText = `Total: $ ${budget}`;
-
-console.log(budget)
 
 // budget submit event - shows header and hides budget input after clicked, 
 // also added a reset button that shows budget entry again
