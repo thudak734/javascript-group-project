@@ -5,6 +5,7 @@ let budgetDisplay = document.getElementById("budgetDisplay");
 let header = document.querySelector(".header");
 let enterBudgetContainer = document.querySelector(".enterBudget");
 
+
 submitBudget.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -67,24 +68,19 @@ mainForm.addEventListener('submit', event => {
 
     //// steve's code below
 
-    initialBudget = budgetInput.value;
+    
+    let initialBudget = budgetInput.value;
 
-    // let currentBudget = budgetInput.value; //look at these
     if(category.value === "Entertainment"){
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        currentBudget = currentBudget - amount.value; //look at these
-        amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
-=======
-=======
->>>>>>> Stashed changes
+
         let currentBudget = budgetInput.value -= amount.value; //look at these
-        amountLeftInBudgetSpan.innerText = currentBudget;
->>>>>>> Stashed changes
+
+        amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
+
         entertainmentTotal += parseInt(amount.value);
         entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
         totalSpent += parseInt(amount.value);
-        if(totalSpent >= initialBudget){
+        if(totalSpent > initialBudget.value){
             alert("You cannot purchase additional items");
         } else{
         totalSpentSpan.innerText = `$${totalSpent}`;
