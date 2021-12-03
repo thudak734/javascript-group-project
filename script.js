@@ -78,8 +78,8 @@ mainForm.addEventListener('submit', event => {
         amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
 
 
-        let currentBudget = budgetInput.value -= amount.value; //look at these
-        amountLeftInBudgetSpan.innerText = currentBudget;
+        // let currentBudget = budgetInput.value -= amount.value; //look at these
+        // amountLeftInBudgetSpan.innerText = currentBudget;
 
         entertainmentTotal += parseInt(amount.value);
         entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
