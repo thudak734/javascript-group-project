@@ -1,0 +1,15 @@
+.header {
+    display: none;
+}
+
+.headerShow {
+    display: block;
+}
+
+.enterBudget {
+    display: block;
+}
+
+.enterBudgetHide {
+    display: none;
+}
