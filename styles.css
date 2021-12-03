@@ -117,6 +117,7 @@ header h2 {
 /* category totals CSS */
 .categoryTotals {
     border: 2px #017054 solid;
+    border-radius: 10px;
 }
 .categoryTotals span {
     font-size: 20px;
@@ -137,6 +138,7 @@ section span {
         height: 200px;
     }
     #newEntry {
+        
         width: 50%;
         height: 100vh;
     }
@@ -144,8 +146,6 @@ section span {
         float: left;
     }
     section h3{
-        
-        margin-right: 0;
         width: 500px;
     }
     .budgetForm {
