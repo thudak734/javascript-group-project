@@ -41,7 +41,7 @@ let entertainmentTotal = 0;
 let foodTotal = 0;
 let clothingTotal = 0;
 let billsTotal = 0;
-
+let amountLeftBudget = 0;
 let totalSpent = 0;
 
 let mainForm = document.getElementById("mainForm");
@@ -56,8 +56,10 @@ mainForm.addEventListener('submit', event => {
     //// test code for new element being added
     newEntry = document.getElementById("newEntry");
     let listItem = document.createElement("li");
-    listItem.innertext = payee + " | Amount Spent: " + amount + " | Category: " + category;
+    listItem.innerText = payee + " | Amount Spent: " + amount + " | Category: " + category;
+    if(totalSpent < budgetInput.value){
     newEntry.append(listItem);
+    };
 
     //// steve's code below
 
@@ -69,26 +71,43 @@ mainForm.addEventListener('submit', event => {
         entertainmentTotal += parseInt(amount.value);
         entertainmentTotalSpan.innerText = entertainmentTotal;
         totalSpent += parseInt(amount.value);
+        if(totalSpent > budgetInput.value){
+            alert("You cannot purchase additional items");
+        } else{
         totalSpentSpan.innerText = totalSpent;
+        }
     } else if (category.value === "Food"){
         currentBudget = budgetInput.value - amount.value;
         foodTotal += parseInt(amount.value);
         foodTotalSpan.innerText = foodTotal;
         totalSpent += parseInt(amount.value);
+        if(totalSpent > budgetInput.value){
+            alert("You cannot purchase additional items");
+        } else{
         totalSpentSpan.innerText = totalSpent;
+        }
     } else if (category.value === "Clothing"){
         currentBudget = budgetInput.value - amount.value;
         clothingTotal += parseInt(amount.value);
         clothingTotalSpan.innerText = clothingTotal;
         totalSpent += parseInt(amount.value);
+        if(totalSpent > budgetInput.value){
+            alert("You cannot purchase additional items");
+        } else {
         totalSpentSpan.innerText = totalSpent;
+        }
     } else if(category.value === "Bills"){
         currentBudget = budgetInput.value - amount.value;
         billsTotal += parseInt(amount.value);
         billsTotalSpan.innerText = billsTotal;
         totalSpent += parseInt(amount.value);
+        if(totalSpent > budgetInput.value){
+            alert("You cannot purchase additional items");
+        } else {
         totalSpentSpan.innerText = totalSpent;
+        }
     }
+    
     
 
 
