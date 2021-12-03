@@ -20,6 +20,23 @@ span {
 
 }
 
+ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #595959;
+}
+
+.listItem {
+    flex-grow: 1;
+}
 h2 {
     text-align: center;
     color: white;
