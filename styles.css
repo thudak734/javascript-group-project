@@ -5,7 +5,25 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.headerShow {
+    display: block;
+}
+
+.enterBudget {
+    display: block;
+    color: black;
+}
+
+h1 {
+    color: black;
+}
+
+.enterBudgetHide {
+    display: none;
+}
+
 header {
+    display: none;
     text-align: center;
     padding: 0px;
     margin: 0px;
@@ -34,6 +52,7 @@ li {
 
 .listItem {
     flex-grow: 1;
+    border-bottom: 1px solid lightgray;
 }
 
 h2 {
