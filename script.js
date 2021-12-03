@@ -115,4 +115,3 @@ mainForm.addEventListener('submit', event => {
         }
     }
 });
-
