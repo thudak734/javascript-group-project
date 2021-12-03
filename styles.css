@@ -130,3 +130,28 @@ section span {
 .categoryTotals h4 {
     margin-left: 15px;
 }
+
+@media only screen and (min-width: 768px){
+    #mainForm{
+        width: 50%;
+    }
+    #newEntry {
+        width: 50%;
+        height: 100vh;
+    }
+    section{
+        display: block;
+    }
+    section h3{
+        
+        margin-right: 0;
+        width: 50%;
+    }
+    .budgetForm {
+        display: flex;
+
+    }
+    .categoryTotals {
+        width: 50%;
+    }
+}
