@@ -15,6 +15,8 @@ button{
     /* display: inline-block; */
     font-size: 16px;
     border-radius: 10px;
+    font-weight: bold;
+
 }
 
 #resetBudget{
@@ -26,6 +28,40 @@ button{
 
 .submit{
     margin-top: 20px;   
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+#payee{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#category{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#amount{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
 }
 
 .budgetDisplay{
