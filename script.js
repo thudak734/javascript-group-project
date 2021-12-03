@@ -1,6 +1,4 @@
 
-// budget submit event - shows header and hides budget input after clicked, 
-// also added a reset button that shows budget entry again
 let budgetInput = document.getElementById("budgetInput");
 let submitBudget = document.getElementById("submitBudget");
 let budgetDisplay = document.getElementById("budgetDisplay");
@@ -28,9 +26,7 @@ resetButton.addEventListener("click", () => {
 });
 
 
-
 let fillerForBudgetDisplay = document.querySelector('h1'); //to display at top of page
-
 
 
 let category = document.getElementById("category");
@@ -49,13 +45,26 @@ let currentBudget = 0;
 let totalSpent = 0;
 
 let mainForm = document.getElementById("mainForm");
-
 let amount = document.getElementById("amount");
-
 let userTotal = 0;// user weekly budget input
+
+let payee = document.getElementById("payee");
 
 mainForm.addEventListener('submit', event => {
     event.preventDefault();
+
+    // test code for new element being added
+    newEntry = document.getElementById("newEntry");
+    let listItem = document.createElement("li");
+    entryInfo = payee + " | Amount Spent: " + amount + " | Category: " + category;
+    //`${payee} | Amount Spent:${amount} | Category: ${category}`;
+    listItem.innertext = entryInfo;
+    newEntry.append("listItem");
+
+
+
+    // steve's code below
+
 
     if(category.value === "Entertainment"){
         currentBudget = budgetInput.value - amount.value;
