@@ -5,7 +5,6 @@ let budgetDisplay = document.getElementById("budgetDisplay");
 let header = document.querySelector(".header");
 let enterBudgetContainer = document.querySelector(".enterBudget");
 
-
 submitBudget.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -25,9 +24,6 @@ resetButton.addEventListener("click", () => {
     enterBudgetContainer.classList.add("enterBudget");
     window.location.reload();
 });
-
-
-let fillerForBudgetDisplay = document.querySelector('h1'); //to display at top of page
 
 
 let category = document.getElementById("category");
@@ -66,55 +62,51 @@ mainForm.addEventListener('submit', event => {
     newEntry.append(listItem);
     };
 
-    //// steve's code below
 
-    
-    let initialBudget = budgetInput.value;
 
     if(category.value === "Entertainment"){
-
-        let currentBudget = budgetInput.value -= amount.value; //look at these
+        let currentBudget = budgetInput.value -= amount.value;
         amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
-
         entertainmentTotal += parseInt(amount.value);
         entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
         totalSpent += parseInt(amount.value);
 
-        if (budgetInput.value >= 0 ){ //this worked but stopped prompt
+        if (budgetInput.value >= 0 ){
             totalSpentSpan.innerText = `$${totalSpent}`;
         }
           else alert("You cannot purchase additional items");
-        }
-    
-    else if (category.value === "Food"){
-        currentBudget = budgetInput.value - amount.value; // 
+        
+    } else if (category.value === "Food"){
+        currentBudget = budgetInput.value -= amount.value; 
+        amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
         foodTotal += parseInt(amount.value);
         foodTotalSpan.innerText = `$${foodTotal}`;
         totalSpent += parseInt(amount.value);
-        if(totalSpent > budgetInput.value){
-            alert("You cannot purchase additional items");
-        } else{
-        totalSpentSpan.innerText = `$${totalSpent}`;
+        if (budgetInput.value >= 0 ){
+            totalSpentSpan.innerText = `$${totalSpent}`;
         }
+          else alert("You cannot purchase additional items");
+        
     } else if (category.value === "Clothing"){
-        currentBudget = budgetInput.value - amount.value;
+        currentBudget = budgetInput.value -= amount.value; 
+        amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
         clothingTotal += parseInt(amount.value);
         clothingTotalSpan.innerText = `$${clothingTotal}`;
         totalSpent += parseInt(amount.value);
-        if(totalSpent > budgetInput.value){
-            alert("You cannot purchase additional items");
-        } else {
-        totalSpentSpan.innerText = `$${totalSpent}`;
+        if (budgetInput.value >= 0 ){
+            totalSpentSpan.innerText = `$${totalSpent}`;
         }
+          else alert("You cannot purchase additional items");
+
     } else if(category.value === "Bills"){
-        currentBudget = budgetInput.value - amount.value;
+        currentBudget = budgetInput.value -= amount.value; 
+        amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
         billsTotal += parseInt(amount.value);
         billsTotalSpan.innerText = `$${billsTotal}`;
         totalSpent += parseInt(amount.value);
-        if(totalSpent > budgetInput.value){
-            alert("You cannot purchase additional items");
-        } else {
-        totalSpentSpan.innerText = `$${totalSpent}`;
+           if (budgetInput.value >= 0 ){
+            totalSpentSpan.innerText = `$${totalSpent}`;
         }
+          else alert("You cannot purchase additional items");
     }
 });
