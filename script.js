@@ -38,6 +38,8 @@ let amountLeftInBudget = document.getElementById("amountLeftInBudget"); //holds 
 let entertainmentTotalSpan = document.getElementById("entertainmentTotal");
 let totalSpentSpan = document.getElementById("totalSpent");
 let foodTotalSpan = document.getElementById("foodTotal");
+let clothingTotalSpan = document.getElementById("clothingTotal");
+let billsTotalSpan = document.getElementById("billsTotal");
 
 let entertainmentTotal = 0;
 let foodTotal = 0;
@@ -65,6 +67,18 @@ mainForm.addEventListener('submit', event => {
         currentBudget = budgetInput.value - amount.value;
         foodTotal += parseInt(amount.value);
         foodTotalSpan.innerText = foodTotal;
+        totalSpent += parseInt(amount.value);
+        totalSpentSpan.innerText = totalSpent;
+    } else if (category.value === "Clothing"){
+        currentBudget = budgetInput.value - amount.value;
+        clothingTotal += parseInt(amount.value);
+        clothingTotalSpan.innerText = clothingTotal;
+        totalSpent += parseInt(amount.value);
+        totalSpentSpan.innerText = totalSpent;
+    } else if(category.value === "Bills"){
+        currentBudget = budgetInput.value - amount.value;
+        billsTotal += parseInt(amount.value);
+        billsTotalSpan.innerText = billsTotal;
         totalSpent += parseInt(amount.value);
         totalSpentSpan.innerText = totalSpent;
     }
