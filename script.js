@@ -74,6 +74,7 @@ mainForm.addEventListener('submit', event => {
     if(category.value === "Entertainment"){
 
         currentBudget = currentBudget - amount.value; //look at these
+        let currentBudget = budgetInput.value -= amount.value; //look at these
         amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
 
 
@@ -83,12 +84,14 @@ mainForm.addEventListener('submit', event => {
         entertainmentTotal += parseInt(amount.value);
         entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
         totalSpent += parseInt(amount.value);
-        if(totalSpent > initialBudget.value){
-            alert("You cannot purchase additional items");
-        } else{
-        totalSpentSpan.innerText = `$${totalSpent}`;
+
+        if (budgetInput.value >= 0 ){ //this worked but stopped prompt
+            totalSpentSpan.innerText = `$${totalSpent}`;
         }
-    } else if (category.value === "Food"){
+          else alert("You cannot purchase additional items");
+        }
+    
+    else if (category.value === "Food"){
         currentBudget = budgetInput.value - amount.value; // 
         foodTotal += parseInt(amount.value);
         foodTotalSpan.innerText = `$${foodTotal}`;
