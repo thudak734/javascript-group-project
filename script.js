@@ -56,7 +56,6 @@ mainForm.addEventListener('submit', event => {
     //// test code for new element being added
     newEntry = document.getElementById("newEntry");
     let listItem = document.createElement("li");
- 
 
     if(totalSpent < budgetInput.value){
     listItem.innerText = payee.value + " | Amount: $" + amount.value + " | Category: " + category.value;
@@ -68,20 +67,30 @@ mainForm.addEventListener('submit', event => {
 
     //// steve's code below
 
-    let currentBudget = budgetInput.value; //look at these
+    initialBudget = budgetInput.value;
+
+    // let currentBudget = budgetInput.value; //look at these
     if(category.value === "Entertainment"){
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
         currentBudget = currentBudget - amount.value; //look at these
         amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
+=======
+=======
+>>>>>>> Stashed changes
+        let currentBudget = budgetInput.value -= amount.value; //look at these
+        amountLeftInBudgetSpan.innerText = currentBudget;
+>>>>>>> Stashed changes
         entertainmentTotal += parseInt(amount.value);
         entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
         totalSpent += parseInt(amount.value);
-        if(totalSpent > budgetInput.value){
+        if(totalSpent >= initialBudget){
             alert("You cannot purchase additional items");
         } else{
         totalSpentSpan.innerText = `$${totalSpent}`;
         }
     } else if (category.value === "Food"){
-        currentBudget = budgetInput.value - amount.value;
+        currentBudget = budgetInput.value - amount.value; // 
         foodTotal += parseInt(amount.value);
         foodTotalSpan.innerText = `$${foodTotal}`;
         totalSpent += parseInt(amount.value);
