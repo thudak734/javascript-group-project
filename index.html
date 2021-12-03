@@ -4,33 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h2>
-            Your weekly budget is: $<span id="budgetInput"></span>
+            Your weekly budget is: $<span id="budgetDisplay"></span>
         </h2>
+        <button id="resetBudget">Reset Budget</button>
     </header>
 
-
- <!-- commenting this out for now until we decide on propmt or input -->
-  <!-- <div id= "total" ></div>
     <div class="container">
         <div class="enterBudget">
             <h2>Enter your weekly budget</h2>
             <p>
-            <input type="text" id="budgetInput" name="budgetInput">
-            </p>
-            <p>
+            <form id="submitBudget"> 
+            <input type="number" id="budgetInput" name="budgetInput">
             <button type="submit">Submit</button>
+            </form>
             </p>
-        </div> -->
+        </div>
 
         <div class="budgetForm">
-            <form id="form">
+            <form id="mainForm">
                 <p>
                   <label for="payee">Payee</label>
                   <input type="text" name="payee" id="payee">
@@ -46,7 +43,7 @@
                     <option>Food</option>
                     <option>Clothing</option>
                     <option>Bills</option>
-                    </select>
+                  </select>
                 </p>
                 <p>
                   <button type="submit">Submit</button>
