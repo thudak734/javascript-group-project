@@ -71,44 +71,44 @@ mainForm.addEventListener('submit', event => {
     let currentBudget = budgetInput.value; //look at these
     if(category.value === "Entertainment"){
         currentBudget = currentBudget - amount.value; //look at these
-        amountLeftInBudgetSpan.innerText = currentBudget;
+        amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
         entertainmentTotal += parseInt(amount.value);
-        entertainmentTotalSpan.innerText = entertainmentTotal;
+        entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
         totalSpent += parseInt(amount.value);
         if(totalSpent > budgetInput.value){
             alert("You cannot purchase additional items");
         } else{
-        totalSpentSpan.innerText = totalSpent;
+        totalSpentSpan.innerText = `$${totalSpent}`;
         }
     } else if (category.value === "Food"){
         currentBudget = budgetInput.value - amount.value;
         foodTotal += parseInt(amount.value);
-        foodTotalSpan.innerText = foodTotal;
+        foodTotalSpan.innerText = `$${foodTotal}`;
         totalSpent += parseInt(amount.value);
         if(totalSpent > budgetInput.value){
             alert("You cannot purchase additional items");
         } else{
-        totalSpentSpan.innerText = totalSpent;
+        totalSpentSpan.innerText = `$${totalSpent}`;
         }
     } else if (category.value === "Clothing"){
         currentBudget = budgetInput.value - amount.value;
         clothingTotal += parseInt(amount.value);
-        clothingTotalSpan.innerText = clothingTotal;
+        clothingTotalSpan.innerText = `$${clothingTotal}`;
         totalSpent += parseInt(amount.value);
         if(totalSpent > budgetInput.value){
             alert("You cannot purchase additional items");
         } else {
-        totalSpentSpan.innerText = totalSpent;
+        totalSpentSpan.innerText = `$${totalSpent}`;
         }
     } else if(category.value === "Bills"){
         currentBudget = budgetInput.value - amount.value;
         billsTotal += parseInt(amount.value);
-        billsTotalSpan.innerText = billsTotal;
+        billsTotalSpan.innerText = `$${billsTotal}`;
         totalSpent += parseInt(amount.value);
         if(totalSpent > budgetInput.value){
             alert("You cannot purchase additional items");
         } else {
-        totalSpentSpan.innerText = totalSpent;
+        totalSpentSpan.innerText = `$${totalSpent}`;
         }
     }
 });

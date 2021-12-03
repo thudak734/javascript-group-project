@@ -55,11 +55,28 @@ li {
     border-bottom: 1px solid lightgray;
 }
 
-h2 {
+header h2 {
     text-align: center;
     color: white;
     border-radius: 10px;
     margin: 0px;
     font-size: 50px;
     height: 150px;
+}
+
+/* category totals CSS */
+.categoryTotals {
+    border: 2px #017054 solid;
+}
+.categoryTotals span {
+    font-size: 20px;
+}
+.categoryTotals h2 {
+    text-align: center;
+}
+section span {
+    font-size: 20px;
+}
+.categoryTotals h4 {
+    margin-left: 15px;
 }
