@@ -1,19 +1,31 @@
-.header {
-    display: none;
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
-.headerShow {
-    display: block;
+header {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #018884 , #017054);
 }
 
-.enterBudget {
-    display: block;
+span {
+    font-size: 100px;
+    color: white;
+
 }
 
-.enterBudgetHide {
-    display: none;
+h2 {
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin: 0px;
+    font-size: 50px;
+    height: 150px;
+    
 }
-
-li {
-    list-style-type: none;
-} 
