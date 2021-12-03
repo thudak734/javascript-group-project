@@ -56,16 +56,16 @@ mainForm.addEventListener('submit', event => {
     event.preventDefault();
 
     if(category.value === "Entertainment"){
-        currentBudget = budget - amount.value;
-        entertainmentTotal += amount.value;
+        currentBudget = budgetInput.value - amount.value;
+        entertainmentTotal += parseInt(amount.value);
         entertainmentTotalSpan.innerText = entertainmentTotal;
-        totalSpent += amount.value;
+        totalSpent += parseInt(amount.value);
         totalSpentSpan.innerText = totalSpent;
     } else if (category.value === "Food"){
-        currentBudget = budget - amount.value;
-        foodTotal += amount.value;
+        currentBudget = budgetInput.value - amount.value;
+        foodTotal += parseInt(amount.value);
         foodTotalSpan.innerText = foodTotal;
-        totalSpent += amount.value;
+        totalSpent += parseInt(amount.value);
         totalSpentSpan.innerText = totalSpent;
     }
     
