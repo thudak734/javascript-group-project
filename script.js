@@ -25,7 +25,6 @@ resetButton.addEventListener("click", () => {
     window.location.reload();
 });
 
-
 let category = document.getElementById("category");
 let amountLeftInBudgetSpan = document.getElementById("amountLeftInBudget"); //holds current budget
 let entertainmentTotalSpan = document.getElementById("entertainmentTotal");
@@ -61,8 +60,6 @@ mainForm.addEventListener('submit', event => {
     //<button name="deleteButton"><i class="fas fa-trash"></i></button>`;
     newEntry.append(listItem);
     };
-
-
 
     if(category.value === "Entertainment"){
         let currentBudget = budgetInput.value -= amount.value;
