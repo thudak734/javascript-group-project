@@ -155,4 +155,7 @@ section span {
     .categoryTotals {
         width: 50%;
     }
+    li {
+        margin-left: 20px;
+    }
 }
