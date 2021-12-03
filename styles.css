@@ -134,22 +134,23 @@ section span {
 @media only screen and (min-width: 768px){
     #mainForm{
         width: 50%;
+        height: 200px;
     }
     #newEntry {
         width: 50%;
         height: 100vh;
     }
     section{
-        display: block;
+        float: left;
     }
     section h3{
         
         margin-right: 0;
-        width: 50%;
+        width: 500px;
     }
     .budgetForm {
         display: flex;
-
+        height: 200px;
     }
     .categoryTotals {
         width: 50%;
