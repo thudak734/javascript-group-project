@@ -88,8 +88,9 @@ p{
     height: 30px;
 }
 
-.submitListItems{
-    width: 100%;
+#submitListItems{
+    width: 50%;
+    
 }
 
 .enterBudget {

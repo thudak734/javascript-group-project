@@ -63,7 +63,7 @@ mainForm.addEventListener('submit', event => {
 
     if(category.value === "Entertainment"){
 
-        let currentBudget = budgetInput.value -= amount.value; //look at these
+        let currentBudget = budgetInput.value -= amount.value;
         amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
 
         entertainmentTotal += parseInt(amount.value);
@@ -73,8 +73,11 @@ mainForm.addEventListener('submit', event => {
         if (budgetInput.value >= 0 ){
             totalSpentSpan.innerText = `$${totalSpent}`;
         }
-          else alert("You cannot purchase additional items");
-        
+          else {
+            submitListItems.disabled = true;
+            alert("You cannot purchase additional items");
+          }
+    
     } else if (category.value === "Food"){
         currentBudget = budgetInput.value -= amount.value; 
         amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
@@ -84,7 +87,10 @@ mainForm.addEventListener('submit', event => {
         if (budgetInput.value >= 0 ){
             totalSpentSpan.innerText = `$${totalSpent}`;
         }
-          else alert("You cannot purchase additional items");
+        else {
+            submitListItems.disabled = true;
+            alert("You cannot purchase additional items");
+          }
         
     } else if (category.value === "Clothing"){
         currentBudget = budgetInput.value -= amount.value; 
@@ -95,7 +101,10 @@ mainForm.addEventListener('submit', event => {
         if (budgetInput.value >= 0 ){
             totalSpentSpan.innerText = `$${totalSpent}`;
         }
-          else alert("You cannot purchase additional items");
+        else {
+            submitListItems.disabled = true;
+            alert("You cannot purchase additional items");
+          }
 
     } else if(category.value === "Bills"){
         currentBudget = budgetInput.value -= amount.value; 
@@ -106,6 +115,9 @@ mainForm.addEventListener('submit', event => {
            if (budgetInput.value >= 0 ){
             totalSpentSpan.innerText = `$${totalSpent}`;
         }
-          else alert("You cannot purchase additional items");
+        else {
+            submitListItems.disabled = true;
+            alert("You cannot purchase additional items");
+          }
     }
 });
