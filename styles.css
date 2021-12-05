@@ -209,7 +209,9 @@ section span {
         height: 200px;
     }
     #newEntry {
-        
+        position: absolute;
+        right: 5px;
+        top: 300px;
         width: 50%;
         height: 100vh;
     }
