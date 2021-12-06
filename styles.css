@@ -15,6 +15,8 @@ button{
     /* display: inline-block; */
     font-size: 16px;
     border-radius: 10px;
+    font-weight: bold;
+
 }
 
 #resetBudget{
@@ -24,14 +26,52 @@ button{
     margin-bottom: 10px;
 }
 
+
 .submit{
     margin-top: 20px;   
 }
+
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+#payee{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#category{
+    width: 100%;
+    padding: 0px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#amount{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+}
+
 
 h2{
     width: 100%;
     font-size: 30px;
 }
+
 
 #budgetInput{
     width: 50%;
@@ -39,12 +79,16 @@ h2{
 }
 
 #budgetDisplay{
-    display:flex;
+    display: inline-flex;
+
     color: white;
     text-align: center;
     justify-content: center;
     font-size: 100px;
-    
+}
+
+#dollarSign {
+    font-size: 100px;
 }
 
 .headerShow {
@@ -59,38 +103,57 @@ h2{
     background-image: linear-gradient(to right, #018884 , #017054);
 }
 
+input[type="text"] {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 8px;
+}
+
+input[type="number"] {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 8px;
+}
+
+select {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+
+}
+
 #submitBudget{
     display: flex;
     align-items: stretch;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    
+    position: relative;  
 }
 
-p{
+p {
     font-size: 20px;
     font-weight: bold;
 }
 
-#payee{
-    width: 100%;
+#payee {
+    width: 75%;
     height: 30px;
 }
 
-#amount{
-    width: 100%;
+#amount {
+    width: 75%;
     height: 30px;
 }
 
-#category{
-    width: 100%;
+#category {
+    width: 75%;
     height: 30px;
     margin-top: 10px;
 }
 
-.submitListItems{
-    width: 100%;
+#submitListItems {
+    width: 50%;
+    
 }
 
 .enterBudget {
@@ -101,6 +164,7 @@ p{
     font-size: 25px;
     border-radius: 10px;
     background-image: linear-gradient(to right, #018884 , #017054);
+
 }
 
 .enterBudgetHide {
@@ -114,6 +178,15 @@ header {
     margin: 0px;
     font-size: 25px;
     background-image: linear-gradient(to right, #018884 , #017054);
+}
+
+.budgetForm {
+    display: flex;
+}
+
+.mainForm {
+    justify-content: center;
+
 }
 
 /* span {
@@ -146,8 +219,8 @@ header h2 {
     color: white;
     border-radius: 10px;
     margin: 0px;
-    font-size: 50px;
-    height: 150px;
+    font-size: 45px;
+    height: 114px;
 }
 
 /* category totals CSS */
@@ -174,19 +247,27 @@ section span {
         height: 200px;
     }
     #newEntry {
-        
+        position: absolute;
+        right: 5px;
+        top: 300px;
         width: 50%;
         height: 100vh;
     }
     section{
-        float: left;
+        margin-top: 60px;
+        float: left; 
+        width: 50%;
     }
     section h3{
-        width: 500px;
+        width: 400px;
     }
     .budgetForm {
         display: flex;
         height: 200px;
+    }
+    .submitListItems{
+        margin-bottom: 5px;
+        
     }
     .categoryTotals {
         width: 50%;
