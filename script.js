@@ -78,45 +78,54 @@ mainForm.addEventListener('submit', event => {
 
     
     } else if (category.value === "Food"){
-        currentBudget = budgetInput.value -= amount.value; 
-        amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
-        foodTotal += parseInt(amount.value);
-        foodTotalSpan.innerText = `$${foodTotal}`;
-        totalSpent += parseInt(amount.value);
-        if (budgetInput.value >= 0 ){
-            totalSpentSpan.innerText = `$${totalSpent}`;
-        }
-        else {
+        if(parseInt(budgetDisplay.innerText) - totalSpent > 0){
+            if(totalSpent + parseInt(amount.value) <= parseInt(budgetDisplay.innerText)){
+                totalSpent += parseInt(amount.value);
+                totalSpentSpan.innerText = `$${totalSpent}`; 
+                amountLeftBudget = parseInt(budgetDisplay.innerText) - totalSpent;
+                amountLeftInBudgetSpan.innerText = amountLeftBudget;
+                foodTotal += parseInt(amount.value);
+                foodTotalSpan.innerText = `$${foodTotal}`;
+            } else{
+                alert("You cannot afford that.")
+            }
+        } else {
+            alert("You dont have any more money!")
             submitListItems.disabled = true;
-            alert("You cannot purchase additional items");
-          }
-        
+        }
+
     } else if (category.value === "Clothing"){
-        currentBudget = budgetInput.value -= amount.value; 
-        amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
-        clothingTotal += parseInt(amount.value);
-        clothingTotalSpan.innerText = `$${clothingTotal}`;
-        totalSpent += parseInt(amount.value);
-        if (budgetInput.value >= 0 ){
-            totalSpentSpan.innerText = `$${totalSpent}`;
-        }
-        else {
+        if(parseInt(budgetDisplay.innerText) - totalSpent > 0){
+            if(totalSpent + parseInt(amount.value) <= parseInt(budgetDisplay.innerText)){
+                totalSpent += parseInt(amount.value);
+                totalSpentSpan.innerText = `$${totalSpent}`; 
+                amountLeftBudget = parseInt(budgetDisplay.innerText) - totalSpent;
+                amountLeftInBudgetSpan.innerText = amountLeftBudget;
+                clothingTotal += parseInt(amount.value);
+                clothingTotalSpan.innerText = `$${clothingTotal}`;
+            } else{
+                alert("You cannot afford that.")
+            }
+        } else {
+            alert("You dont have any more money!")
             submitListItems.disabled = true;
-            alert("You cannot purchase additional items");
-          }
+        }
 
     } else if(category.value === "Bills"){
-        currentBudget = budgetInput.value -= amount.value; 
-        amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
-        billsTotal += parseInt(amount.value);
-        billsTotalSpan.innerText = `$${billsTotal}`;
-        totalSpent += parseInt(amount.value);
-           if (budgetInput.value >= 0 ){
-            totalSpentSpan.innerText = `$${totalSpent}`;
-        }
-        else {
+        if(parseInt(budgetDisplay.innerText) - totalSpent > 0){
+            if(totalSpent + parseInt(amount.value) <= parseInt(budgetDisplay.innerText)){
+                totalSpent += parseInt(amount.value);
+                totalSpentSpan.innerText = `$${totalSpent}`; 
+                amountLeftBudget = parseInt(budgetDisplay.innerText) - totalSpent;
+                amountLeftInBudgetSpan.innerText = amountLeftBudget;
+                billsTotal += parseInt(amount.value);
+                billsTotalSpan.innerText = `$${billsTotal}`;
+            } else{
+                alert("You cannot afford that.")
+            }
+        } else {
+            alert("You dont have any more money!")
             submitListItems.disabled = true;
-            alert("You cannot purchase additional items");
-          }
+        }
     }
 });
