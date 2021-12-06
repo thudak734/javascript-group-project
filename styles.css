@@ -293,7 +293,7 @@ section span {
     #newEntry {
         position: absolute;
         right: 5px;
-        top: 300px;
+        top: 245px;
         width: 50%;
         height: 100vh;
     }
@@ -324,7 +324,7 @@ section span {
     #resetBudget{
         width: 50%;
         position: relative;    
-        margin-top: 75px;
+        margin-top: 20px;
         margin-bottom: 10px;
     }
 }
