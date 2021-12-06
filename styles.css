@@ -67,7 +67,6 @@ button{
     background-color: #79d47c;
     color: black;
     border-radius: 10px;
-
 }
 
 label{
@@ -117,6 +116,12 @@ h2{
 }
 
 #budgetInput:hover{
+    background-color: rgb(240, 255, 218);
+}
+#payee:hover{
+    background-color: rgb(240, 255, 218);
+}
+#amount:hover {
     background-color: rgb(240, 255, 218);
 }
 
