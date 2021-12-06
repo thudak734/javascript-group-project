@@ -51,7 +51,7 @@ mainForm.addEventListener('submit', event => {
     newEntry = document.getElementById("newEntry");
     let listItem = document.createElement("li");
 
-    if(totalSpent + parseInt(amount.value)< parseInt(budgetDisplay.innerText)){
+    if(totalSpent + parseInt(amount.value)<= parseInt(budgetDisplay.innerText)){
     listItem.innerText = payee.value + " | Amount: $" + amount.value + " | Category: " + category.value;
     //listItem.innerHTML = `
     //<span class="listItem">${listItem}</span>
@@ -60,26 +60,46 @@ mainForm.addEventListener('submit', event => {
     };
 
     if(category.value === "Entertainment"){
-
-        let currentBudget = budgetInput.value -= amount.value;
-        amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
-
+        if(parseInt(budgetDisplay.innerText) - totalSpent > 0){
+            if(totalSpent + parseInt(amount.value) <= parseInt(budgetDisplay.innerText)){
+        totalSpent += parseInt(amount.value);
+        totalSpentSpan.innerText = `$${totalSpent}`; 
+        amountLeftBudget = parseInt(budgetDisplay.innerText) - totalSpent;
+        amountLeftInBudgetSpan.innerText = amountLeftBudget;
         entertainmentTotal += parseInt(amount.value);
         entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
-        totalSpent += parseInt(amount.value);
-
-        if (budgetInput.value >= 0 ){
-            totalSpentSpan.innerText = `$${totalSpent}`;
-        }
-        else if(budgetInput.value < 0){
-             alert("You cannot purchase additional items");
-            amountLeftInBudgetSpan.innerText = `$${currentBudget + parseInt(amount.value)}`
-           
-        }
-          else {
+            } else{
+                alert("You cannot afford that.")
+            }
+        } else {
+            alert("You dont have any more money!")
             submitListItems.disabled = true;
-            alert("You cannot purchase additional items");
-          }
+        }
+
+        // let currentBudget = budgetInput.value -= amount.value;
+        
+        // if (budgetInput.value > 0 ){
+        //     amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
+        //     entertainmentTotal += parseInt(amount.value);
+        //     entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
+        //     totalSpent += parseInt(amount.value);
+
+       
+        //     totalSpentSpan.innerText = `$${totalSpent}`;
+        // }
+        // else if(budgetInput.value < 0){
+            
+        //     amountLeftInBudgetSpan.innerText = `$${parseInt(budgetDisplay.innerText) - totalSpent}`
+        //     if(amount.value <= parseInt(amountLeftInBudgetSpan.innerText)){
+        //         amountLeftInBudgetSpan.innerText = parseInt(amountLeftInBudgetSpan.innerText) - amount.value;
+        //     } else{
+        //     alert("You cannot afford that");
+        //     }
+        // }
+        //   else {
+        //     submitListItems.disabled = true;
+        //     alert("You cannot purchase additional items");
+        //   }
     
     } else if (category.value === "Food"){
         currentBudget = budgetInput.value -= amount.value; 
