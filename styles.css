@@ -48,7 +48,7 @@ input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 #category{
@@ -136,17 +136,18 @@ p {
 }
 
 #payee {
-    width: 75%;
+    /* width: 75%; */
     height: 30px;
+    margin-top: 0px;
 }
 
 #amount {
-    width: 75%;
+    /* width: 75%; */
     height: 30px;
 }
 
 #category {
-    width: 75%;
+    /* width: 75%; */
     height: 30px;
     margin-top: 10px;
 }
