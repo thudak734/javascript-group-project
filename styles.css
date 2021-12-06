@@ -74,18 +74,19 @@ p{
 }
 
 #payee{
-    width: 50%;
+    width: 100%;
     height: 30px;
 }
 
 #amount{
-    width: 50%;
+    width: 100%;
     height: 30px;
 }
 
 #category{
-    width: 50%;
+    width: 100%;
     height: 30px;
+    margin-top: 10px;
 }
 
 .submitListItems{
