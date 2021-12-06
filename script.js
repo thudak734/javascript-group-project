@@ -9,8 +9,6 @@ submitBudget.addEventListener("submit", (event) => {
     event.preventDefault();
 
     let budgetEntered = budgetInput.value;
-    console.log(budgetEntered);
-
     budgetDisplay.innerText = budgetEntered;
 
     header.classList.add("headerShow");
