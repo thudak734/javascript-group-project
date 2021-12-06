@@ -76,30 +76,6 @@ mainForm.addEventListener('submit', event => {
             submitListItems.disabled = true;
         }
 
-        // let currentBudget = budgetInput.value -= amount.value;
-        
-        // if (budgetInput.value > 0 ){
-        //     amountLeftInBudgetSpan.innerText = `$${currentBudget}`;
-        //     entertainmentTotal += parseInt(amount.value);
-        //     entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
-        //     totalSpent += parseInt(amount.value);
-
-       
-        //     totalSpentSpan.innerText = `$${totalSpent}`;
-        // }
-        // else if(budgetInput.value < 0){
-            
-        //     amountLeftInBudgetSpan.innerText = `$${parseInt(budgetDisplay.innerText) - totalSpent}`
-        //     if(amount.value <= parseInt(amountLeftInBudgetSpan.innerText)){
-        //         amountLeftInBudgetSpan.innerText = parseInt(amountLeftInBudgetSpan.innerText) - amount.value;
-        //     } else{
-        //     alert("You cannot afford that");
-        //     }
-        // }
-        //   else {
-        //     submitListItems.disabled = true;
-        //     alert("You cannot purchase additional items");
-        //   }
     
     } else if (category.value === "Food"){
         currentBudget = budgetInput.value -= amount.value; 
