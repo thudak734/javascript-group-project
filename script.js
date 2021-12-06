@@ -46,12 +46,12 @@ let payee = document.getElementById("payee");
 
 mainForm.addEventListener('submit', event => {
     event.preventDefault();
-
+     
     //// test code for new element being added
     newEntry = document.getElementById("newEntry");
     let listItem = document.createElement("li");
 
-    if(totalSpent < budgetInput.value){
+    if(totalSpent < parseInt(budgetDisplay.innerText)){
     listItem.innerText = payee.value + " | Amount: $" + amount.value + " | Category: " + category.value;
     //listItem.innerHTML = `
     //<span class="listItem">${listItem}</span>
