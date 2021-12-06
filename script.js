@@ -46,12 +46,12 @@ let payee = document.getElementById("payee");
 
 mainForm.addEventListener('submit', event => {
     event.preventDefault();
-     
+
     //// test code for new element being added
     newEntry = document.getElementById("newEntry");
     let listItem = document.createElement("li");
 
-    if(totalSpent < parseInt(budgetDisplay.innerText)){
+    if(totalSpent + parseInt(amount.value)< parseInt(budgetDisplay.innerText)){
     listItem.innerText = payee.value + " | Amount: $" + amount.value + " | Category: " + category.value;
     //listItem.innerHTML = `
     //<span class="listItem">${listItem}</span>
@@ -70,6 +70,11 @@ mainForm.addEventListener('submit', event => {
 
         if (budgetInput.value >= 0 ){
             totalSpentSpan.innerText = `$${totalSpent}`;
+        }
+        else if(budgetInput.value < 0){
+             alert("You cannot purchase additional items");
+            amountLeftInBudgetSpan.innerText = `$${currentBudget + parseInt(amount.value)}`
+           
         }
           else {
             submitListItems.disabled = true;
