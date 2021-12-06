@@ -23,22 +23,20 @@
 
     <div class="container">
         <div class="enterBudget">
-            <h2>Enter your weekly budget:</h2>
+            <div id="budgetHeaderBackground">
+                <h2>Enter your weekly budget:</h2>
 
-            <form id="submitBudget">
-                <input type="number" id="budgetInput" name="budgetInput">
-                <button class=submit type="submit">Submit</button>
-            </form>
-
+                <form id="submitBudget">
+                    <input type="number" id="budgetInput" name="budgetInput">
+                    <button class="submit" type="submit">Submit</button>
+                </form>
+            </div>
         </div>
         <button id="resetBudget">Reset Budget</button>
         <div class="budgetForm">
-            <form id="mainForm">
+            <form id="mainForm">         
                 <p>
-
                     <label for="payee">Payee:</label>
-                </p>
-                <p>
                     <input type="text" name="payee" id="payee" placeholder="Name of recipient">
 
                 </p>
