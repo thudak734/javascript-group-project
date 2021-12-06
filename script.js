@@ -65,7 +65,7 @@ mainForm.addEventListener('submit', event => {
         totalSpent += parseInt(amount.value);
         totalSpentSpan.innerText = `$${totalSpent}`; 
         amountLeftBudget = parseInt(budgetDisplay.innerText) - totalSpent;
-        amountLeftInBudgetSpan.innerText = amountLeftBudget;
+        amountLeftInBudgetSpan.innerText = `$${amountLeftBudget}`;
         entertainmentTotal += parseInt(amount.value);
         entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
             } else{
@@ -83,7 +83,7 @@ mainForm.addEventListener('submit', event => {
                 totalSpent += parseInt(amount.value);
                 totalSpentSpan.innerText = `$${totalSpent}`; 
                 amountLeftBudget = parseInt(budgetDisplay.innerText) - totalSpent;
-                amountLeftInBudgetSpan.innerText = amountLeftBudget;
+                amountLeftInBudgetSpan.innerText = `$${amountLeftBudget}`;
                 foodTotal += parseInt(amount.value);
                 foodTotalSpan.innerText = `$${foodTotal}`;
             } else{
@@ -100,7 +100,7 @@ mainForm.addEventListener('submit', event => {
                 totalSpent += parseInt(amount.value);
                 totalSpentSpan.innerText = `$${totalSpent}`; 
                 amountLeftBudget = parseInt(budgetDisplay.innerText) - totalSpent;
-                amountLeftInBudgetSpan.innerText = amountLeftBudget;
+                amountLeftInBudgetSpan.innerText = `$${amountLeftBudget}`;
                 clothingTotal += parseInt(amount.value);
                 clothingTotalSpan.innerText = `$${clothingTotal}`;
             } else{
@@ -117,7 +117,7 @@ mainForm.addEventListener('submit', event => {
                 totalSpent += parseInt(amount.value);
                 totalSpentSpan.innerText = `$${totalSpent}`; 
                 amountLeftBudget = parseInt(budgetDisplay.innerText) - totalSpent;
-                amountLeftInBudgetSpan.innerText = amountLeftBudget;
+                amountLeftInBudgetSpan.innerText = `$${amountLeftBudget}`;
                 billsTotal += parseInt(amount.value);
                 billsTotalSpan.innerText = `$${billsTotal}`;
             } else{
