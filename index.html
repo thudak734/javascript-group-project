@@ -23,8 +23,12 @@
 
     <div class="container">
         <div class="enterBudget">
-            <div id="budgetHeaderBackground">
-                <h2>Enter your weekly budget:</h2>
+            <h2>Enter your weekly budget:</h2>
+
+            <form id="submitBudget">
+                <input type="number" id="budgetInput" name="budgetInput">
+                <button class="submit" type="submit">Submit</button>
+            </form>
 
                 <form id="submitBudget">
                     <input type="number" id="budgetInput" name="budgetInput">
@@ -34,17 +38,18 @@
         </div>
         <button id="resetBudget">Reset Budget</button>
         <div class="budgetForm">
-            <form id="mainForm">         
-                <p>
+            <form id="mainForm">
+                
+
                     <label for="payee">Payee:</label>
+                
+               
                     <input type="text" name="payee" id="payee" placeholder="Name of recipient">
 
-                </p>
-                <p>
+               
                     <label for="amount">Amount:</label>
                     <input type="number" name="amount" id="amount" placeholder="$0.00">
-                </p>
-                <p>
+               
 
                     <label for="category">Category:</label>
                     <select id="category">
@@ -54,10 +59,8 @@
                         <option>Bills</option>
                     </select>
 
-                </p>
-                <p>
                     <button id="submitListItems" type="submit">Submit</button>
-                </p>
+                
             </form>
             <div id="itemsAdded"></div>
 
@@ -69,7 +72,7 @@
         </section>
     </div>
     <div class="categoryTotals">
-        <h2>Spending Totals by Category</h2>
+        <h2>Spending Totals by Category:</h2>
 
         <h4>Entertainment: <span id="entertainmentTotal"></span></h3>
             <h4>Food: <span id="foodTotal"></span></h3>
