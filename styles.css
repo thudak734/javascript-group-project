@@ -28,7 +28,7 @@ button{
 
 
 .submit{
-    margin-top: 20px;   
+    margin-top: 20px;
 }
 
 
@@ -55,7 +55,7 @@ input[type=text] {
     width: 100%;
     padding: 0px 20px;
     margin: 8px 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 #amount{
@@ -129,6 +129,9 @@ select {
     align-items: center;
     position: relative;  
 }
+#submitListItems{
+    width: 100%;
+}
 
 p {
     font-size: 20px;
@@ -137,24 +140,19 @@ p {
 
 #payee {
     /* width: 75%; */
-    height: 30px;
+    height: 50px;
     margin-top: 0px;
 }
 
 #amount {
     /* width: 75%; */
-    height: 30px;
+    height: 50px;
 }
 
 #category {
     /* width: 75%; */
-    height: 30px;
+    height: 50px;
     margin-top: 10px;
-}
-
-#submitListItems {
-    width: 50%;
-    
 }
 
 .enterBudget {
@@ -179,10 +177,6 @@ header {
     margin: 0px;
     font-size: 25px;
     background-image: linear-gradient(to right, #018884 , #017054);
-}
-
-.budgetForm {
-    display: flex;
 }
 
 .mainForm {
@@ -228,12 +222,15 @@ header h2 {
 .categoryTotals {
     border: 2px #017054 solid;
     border-radius: 10px;
+    
 }
 .categoryTotals span {
     font-size: 20px;
+    
 }
 .categoryTotals h2 {
     text-align: center;
+    
 }
 section span {
     font-size: 20px;
@@ -255,8 +252,7 @@ section span {
         height: 100vh;
     }
     section{
-        margin-top: 60px;
-        float: left; 
+        margin-top: 230px;
         width: 50%;
     }
     section h3{
@@ -275,5 +271,14 @@ section span {
     }
     li {
         margin-left: 20px;
+    }
+    h2{
+       font-size: 25px;
+    }
+    #resetBudget{
+        width: 50%;
+        position: relative;    
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
