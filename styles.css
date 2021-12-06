@@ -6,16 +6,17 @@ body{
 }
 
 button{
-    background-color: #4CAF50;
-    /* border: solid black 2px; */
+    background-color: #4CAF50; /* Green */
+    border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 16px 32px;
     text-align: center;
     text-decoration: none;
-    /* display: inline-block; */
+    display: inline-block;
     font-size: 16px;
-    border-radius: 10px;
-    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
 
 }
 
@@ -24,13 +25,50 @@ button{
     position: relative;    
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: #4CAF50; 
+    color: white; 
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    font-weight: bold;
+
 }
 
+#resetBudget:hover {
+    background-color: #79d47c;
+    color: black;
+    border-radius: 10px;
+}
 
 .submit{
     margin-top: 20px;
+    background-color: #4CAF50; 
+    color: white;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
+.submit:hover {
+    background-color: #79d47c;
+    color: black;
+    border-radius: 10px;
+
+}
+#submitListItems{
+    width: 100%;
+    background-color: #4CAF50; 
+    color: white; 
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#submitListItems:hover{
+    background-color: #79d47c;
+    color: black;
+    border-radius: 10px;
+
+}
 
 label{
     font-size: 20px;
@@ -76,6 +114,10 @@ h2{
 #budgetInput{
     width: 50%;
     padding: 15px;
+}
+
+#budgetInput:hover{
+    background-color: rgb(240, 255, 218);
 }
 
 #budgetDisplay{
@@ -129,9 +171,7 @@ select {
     align-items: center;
     position: relative;  
 }
-#submitListItems{
-    width: 100%;
-}
+
 
 p {
     font-size: 20px;
@@ -192,10 +232,14 @@ header {
 ul {
     padding-left: 0px;
     list-style: none;
+    /* border: black solid 1px;
+    border-radius: 15px; */
+    /* justify-self: center; */
 }
 
 li {
     display: flex;
+    /* border: black solid 1px; */
     align-items: center;
     border-bottom: 1px solid lightgray;
     padding: 10px 0;
@@ -222,7 +266,8 @@ header h2 {
 .categoryTotals {
     border: 2px #017054 solid;
     border-radius: 10px;
-    
+    background-image: linear-gradient(to right, #018884 , #017054);
+    color: white;
 }
 .categoryTotals span {
     font-size: 20px;
@@ -270,7 +315,7 @@ section span {
         width: 50%;
     }
     li {
-        margin-left: 20px;
+        margin-left: 100px;
     }
     h2{
        font-size: 25px;
