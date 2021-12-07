@@ -44,7 +44,9 @@ let userTotal = 0;// user weekly budget input
 
 let payee = document.getElementById("payee");
 
-var yValues = [0, 0, 0, 0,];
+var yValues = [0, 0, 0, 0];
+var xValues = ["Entertainment", "Food", "Clothes", "Bills"];
+var barColors = ["red", "green","blue","orange"];
 
 mainForm.addEventListener('submit', event => {
     event.preventDefault();
@@ -74,8 +76,9 @@ mainForm.addEventListener('submit', event => {
         amountLeftBudget = parseInt(budgetDisplay.innerText) - totalSpent;
         amountLeftInBudgetSpan.innerText = `$${amountLeftBudget}`;
         entertainmentTotal += parseInt(amount.value);
-        entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
         yValues[0] = entertainmentTotal;
+        entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
+        
             } else{
                 alert("You cannot afford that.")
             }
@@ -139,6 +142,23 @@ mainForm.addEventListener('submit', event => {
             submitListItems.disabled = true;
         }
     }
+    new Chart("myChart", {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+          }]
+        },
+        options: {
+          legend: {display: false},
+          title: {
+            display: true,
+            text: "Spending by Category"
+          }
+        }
+      });
 });
 
 let showCategoryTotals = document.querySelector(".showCategoryTotals");
@@ -158,24 +178,7 @@ hideCategoryTotals.addEventListener("click", () => {
 
 /////////// CHART TRIAL
 
-var xValues = ["Entertainment", "Food", "Clothes", "Bills"];
-var barColors = ["red", "green","blue","orange","brown"];
 
-new Chart("myChart", {
-  type: "bar",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    title: {
-      display: true,
-      text: "Spending by Category"
-    }
-  }
-});
+
+
 
