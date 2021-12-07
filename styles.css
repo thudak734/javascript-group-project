@@ -352,16 +352,12 @@ section span {
 }
 @media only screen and (min-width: 768px){
     .moneyPic.one{
-        background: transparent;
-        position: absolute;
         left: 40px;
         top: 50px;
         height: 150px;
         width: 150px;
     }
-    .moneyPic.two{
-        background: transparent;
-        position: absolute;
+    .moneyPic.two{ 
         right: 40px;
         top: 50px;
         height: 150px;
@@ -376,7 +372,7 @@ section span {
         right: 5px;
         top: 245px;
         width: 50%;
-        height: 100vh;
+        height: 50vh;
     }
     section{
         margin-top: 150px;
