@@ -135,15 +135,18 @@ mainForm.addEventListener('submit', event => {
     }
 });
 
-///////// show and hide categories
-
 let showCategoryTotals = document.querySelector(".showCategoryTotals");
 let hideCategoryTotals = document.querySelector(".hideCategoryTotals");
-// let catSpan = document.getElementById("catSpan");
 
 showCategoryTotals.addEventListener("click", () => {
-
-    hideCategoryTotals.classList.toggle("showCategoryTotals");
-    
+    document.querySelector(".hideCategoryTotals").style.display = "block";
+    document.querySelector(".showCategoryTotals").style.display = "none";
 });
+
+hideCategoryTotals.addEventListener("click", () => {
+    document.querySelector(".showCategoryTotals").style.display = "block";
+    document.querySelector(".hideCategoryTotals").style.display = "none";
+});
+
+
 
