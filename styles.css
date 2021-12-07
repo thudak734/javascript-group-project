@@ -4,7 +4,22 @@ body{
     background-color: white;
     font-family: 'Open Sans', sans-serif;
 }
-
+.moneyPic.one{
+    background: transparent;
+    position: absolute;
+    left: 10px;
+    top: 120px;
+    height: 75px;
+    width: 75px;
+}
+.moneyPic.two{
+    background: transparent;
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    height: 75px;
+    width: 75px;
+}
 button{
     background-color: #4CAF50; /* Green */
     border: none;
@@ -295,8 +310,39 @@ section span {
 .categoryTotals h4 {
     margin-left: 15px;
 }
-
+@media only screen and (min-width: 600px){
+    .moneyPic.one{
+        
+        left: 25px;
+        top: 100px;
+        height: 100px;
+        width: 100px;
+    }
+    .moneyPic.two{
+       
+        right: 25px;
+        top: 100px;
+        height: 100px;
+        width: 100px;
+    }
+}
 @media only screen and (min-width: 768px){
+    .moneyPic.one{
+        background: transparent;
+        position: absolute;
+        left: 40px;
+        top: 50px;
+        height: 150px;
+        width: 150px;
+    }
+    .moneyPic.two{
+        background: transparent;
+        position: absolute;
+        right: 40px;
+        top: 50px;
+        height: 150px;
+        width: 150px;
+    }
     #mainForm{
         width: 50%;
         height: 200px;
