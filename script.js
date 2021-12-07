@@ -135,16 +135,8 @@ mainForm.addEventListener('submit', event => {
     }
 });
 
-///////// show and hide categories
-
-let categoryContainer = document.getElementById("categoryContainer");
 let showCategoryTotals = document.querySelector(".showCategoryTotals");
 let hideCategoryTotals = document.querySelector(".hideCategoryTotals");
-
-showCategoryTotals.addEventListener("click", () => {
-    hideCategoryTotals.classList.add("showCategoryTotals");
-    document.querySelector(".showCategoryTotals").style.display = "none";
-});
 
 showCategoryTotals.addEventListener("click", () => {
     document.querySelector(".hideCategoryTotals").style.display = "block";

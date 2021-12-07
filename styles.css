@@ -249,12 +249,8 @@ header {
 
 h5 {
     font-size: 20px;
+    text-align: center;
 }
-
-/* span {
-    font-size: 100px;
-    color: black;
-} */
 
 ul {
     display: block;
