@@ -298,7 +298,7 @@ header h2 {
     display: none;
     margin: auto;
     padding: 20px;
-    width: 95%;
+    width: 90%;
     border: 2px #017054 solid;
     border-radius: 10px;
     background-image: linear-gradient(to right, #018884 , #017054);
@@ -311,7 +311,7 @@ header h2 {
     margin: auto;
     border: 2px #017054 solid;
     border-radius: 10px;
-    width: 95%;
+    width: 90%;
     background-image: linear-gradient(to right, #018884 , #017054);
     color: white;
     text-align: center;
@@ -326,6 +326,7 @@ header h2 {
     border-radius: 10px;
     margin-top: 40px;
 }
+
 h5 {
     font-size: 20px;
     text-align: center;
@@ -411,6 +412,13 @@ section span {
     }
     .categoryTotals {
         width: 50%;
+    }
+
+    .showCategoryTotals {
+        width: 95%;
+    }
+    .hideCategoryTotals {
+        width: 95%;
     }
     li {
         margin-left: 100px;
