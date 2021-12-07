@@ -6,11 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
         <title>Not Budget Buddy</title>
 </head>
 
@@ -22,7 +20,9 @@
             <br>
              <span id="dollarSign">$</span><span id="budgetDisplay"></span>
         </h2>
+
         <img class="moneyPic two" src="https://png2.cleanpng.com/sh/5a22d0c81ad7b942e70472dcb1e48bb3/L0KzQYm3VcEzN6N9fZH0aYP2gLBuTf1wdpZARdV4aX6wc73wkL1ieqUyTdNvNnK0SbTqVPNla2czSqsDOUS3SYe4VcI3OWI7T6g9OEC5QXB3jvc=/kisspng-money-coin-clip-art-5af6b19cc4cdc6.2989449615261167648061.png" />
+
     </header>
 
     <div class="container">
@@ -70,6 +70,9 @@
                 <h3>Amount Left in Budget: <span id="amountLeftInBudget"></span></h3>
                 </p>
         </section>
+
+        <ul id="newEntry">
+        </ul>
     </div>
 
     <div class="showCategoryTotals">
@@ -82,6 +85,7 @@
             <h4>Food: <span id="foodTotal"></span></h4>
                 <h4>Clothing: <span id="clothingTotal"></span></h4>
                     <h4>Bills: <span id="billsTotal"></span></h4>
+
                     
                     </div>
                     
@@ -90,7 +94,17 @@
     <canvas id="myChart"></canvas>
     <ul id="newEntry">
     </ul>
+
+                    </div>   
+        </div>
+    </div>
+
+    <!-- <div class="chart">
+        <canvas id="myChart"></canvas>
+    </div>  -->
+
+
+
     <script src="script.js"></script>
-    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
 </body>
 </html>
