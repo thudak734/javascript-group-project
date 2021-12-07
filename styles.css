@@ -3,7 +3,18 @@ body{
     flex-direction: column;
     background-color: white;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
+
+h1, h2, h3, h4, h5, h6, button {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300;
+}
+
+/* button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+} */
 .moneyPic.one{
     background: transparent;
     position: absolute;
@@ -298,7 +309,7 @@ header h2 {
     display: none;
     margin: auto;
     padding: 20px;
-    width: 95%;
+    width: 90%;
     border: 2px #017054 solid;
     border-radius: 10px;
     background-image: linear-gradient(to right, #018884 , #017054);
@@ -311,7 +322,7 @@ header h2 {
     margin: auto;
     border: 2px #017054 solid;
     border-radius: 10px;
-    width: 95%;
+    width: 90%;
     background-image: linear-gradient(to right, #018884 , #017054);
     color: white;
     text-align: center;
@@ -325,7 +336,10 @@ header h2 {
     padding-left: 30px;
     border-radius: 10px;
     margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
+
 h5 {
     font-size: 20px;
     text-align: center;
@@ -333,6 +347,7 @@ h5 {
 
 h4 {
     color: black;
+    font-size: 20px;
 }
 
 .categoryTotals span {
@@ -414,13 +429,22 @@ section span {
     .budgetForm {
         display: flex;
         height: 200px;
-    }
-    .submitListItems{
         margin-bottom: 5px;
+    }
+
+    .submitListItems{
+        margin-bottom: 10px;
         
     }
     .categoryTotals {
         width: 50%;
+    }
+
+    .showCategoryTotals {
+        width: 95%;
+    }
+    .hideCategoryTotals {
+        width: 95%;
     }
     li {
         margin-left: 100px;
