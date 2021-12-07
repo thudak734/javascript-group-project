@@ -8,18 +8,18 @@ body{
     background: transparent;
     position: absolute;
     left: 10px;
-    top: 120px;
+    top: 125px;
     height: 75px;
-    width: 75px;
+    width: 65px;
 }
 .moneyPic.two{
     background: transparent;
     position: absolute;
     transform: scaleX(-1);
     right: 10px;
-    top: 120px;
+    top: 125px;
     height: 75px;
-    width: 75px;
+    width: 65px;
 }
 button{
     background-color: #4CAF50; /* Green */
@@ -340,6 +340,20 @@ section span {
 }
 .categoryTotals h4 {
     margin-left: 15px;
+}
+@media only screen and (min-width: 275px){
+    .moneyPic.one{
+        left: 10px;
+        top: 125px;
+        height: 75px;
+        width: 65px;
+    }
+    .moneyPic.two{
+        right: 10px;
+        top: 125px;
+        height: 75px;
+        width: 65px;
+    }
 }
 @media only screen and (min-width: 500px){
     .moneyPic.one{
