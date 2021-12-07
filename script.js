@@ -47,15 +47,20 @@ let payee = document.getElementById("payee");
 mainForm.addEventListener('submit', event => {
     event.preventDefault();
 
-    //// test code for new element being added
     newEntry = document.getElementById("newEntry");
     let listItem = document.createElement("li");
 
     if(totalSpent + parseInt(amount.value)<= parseInt(budgetDisplay.innerText)){
     listItem.innerText = payee.value + " | Amount: $" + amount.value + " | Category: " + category.value;
+    
+    //// test code for new element being added
+    
+
     //listItem.innerHTML = `
     //<span class="listItem">${listItem}</span>
     //<button name="deleteButton"><i class="fas fa-trash"></i></button>`;
+    
+    
     newEntry.append(listItem);
     };
 
@@ -129,3 +134,16 @@ mainForm.addEventListener('submit', event => {
         }
     }
 });
+
+///////// show and hide categories
+
+let showCategoryTotals = document.querySelector(".showCategoryTotals");
+let hideCategoryTotals = document.querySelector(".hideCategoryTotals");
+// let catSpan = document.getElementById("catSpan");
+
+showCategoryTotals.addEventListener("click", () => {
+
+    hideCategoryTotals.classList.toggle("showCategoryTotals");
+    
+});
+
