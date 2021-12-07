@@ -44,6 +44,8 @@ let userTotal = 0;// user weekly budget input
 
 let payee = document.getElementById("payee");
 
+var yValues = [0, 0, 0, 0,];
+
 mainForm.addEventListener('submit', event => {
     event.preventDefault();
 
@@ -73,6 +75,7 @@ mainForm.addEventListener('submit', event => {
         amountLeftInBudgetSpan.innerText = `$${amountLeftBudget}`;
         entertainmentTotal += parseInt(amount.value);
         entertainmentTotalSpan.innerText = `$${entertainmentTotal}`;
+        yValues[0] = entertainmentTotal;
             } else{
                 alert("You cannot afford that.")
             }
@@ -91,6 +94,7 @@ mainForm.addEventListener('submit', event => {
                 amountLeftInBudgetSpan.innerText = `$${amountLeftBudget}`;
                 foodTotal += parseInt(amount.value);
                 foodTotalSpan.innerText = `$${foodTotal}`;
+                yValues[1] = foodTotal;
             } else{
                 alert("You cannot afford that.")
             }
@@ -108,6 +112,7 @@ mainForm.addEventListener('submit', event => {
                 amountLeftInBudgetSpan.innerText = `$${amountLeftBudget}`;
                 clothingTotal += parseInt(amount.value);
                 clothingTotalSpan.innerText = `$${clothingTotal}`;
+                yValues[2] = clothingTotal;
             } else{
                 alert("You cannot afford that.")
             }
@@ -125,6 +130,7 @@ mainForm.addEventListener('submit', event => {
                 amountLeftInBudgetSpan.innerText = `$${amountLeftBudget}`;
                 billsTotal += parseInt(amount.value);
                 billsTotalSpan.innerText = `$${billsTotal}`;
+                yValues[3] = billsTotal;
             } else{
                 alert("You cannot afford that.")
             }
@@ -149,4 +155,27 @@ hideCategoryTotals.addEventListener("click", () => {
 });
 
 
+
+/////////// CHART TRIAL
+
+var xValues = ["Entertainment", "Food", "Clothes", "Bills"];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Spending by Category"
+    }
+  }
+});
 

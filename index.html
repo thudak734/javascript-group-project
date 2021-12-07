@@ -10,7 +10,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
         <title>Not Budget Buddy</title>
 </head>
 
@@ -82,12 +82,15 @@
             <h4>Food: <span id="foodTotal"></span></h4>
                 <h4>Clothing: <span id="clothingTotal"></span></h4>
                     <h4>Bills: <span id="billsTotal"></span></h4>
+                    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
                     </div>
+                    
       </div>
     </div>
 
     <ul id="newEntry">
     </ul>
     <script src="script.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
 </body>
 </html>
