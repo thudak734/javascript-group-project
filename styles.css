@@ -154,11 +154,11 @@ button.submit{
     display: inline-flex;
     color: white;
     text-align: center;
-    font-size: 100px;
+    font-size: 50px;
 }
 
 #dollarSign {
-    font-size: 100px;
+    font-size: 50px;
 }
 
 .headerShow {
@@ -294,8 +294,8 @@ header h2 {
     color: white;
     border-radius: 10px;
     margin: 0px;
-    font-size: 45px;
-    height: 114px;
+    font-size: 35px;
+    height: 80px;
 }
 
 /* category totals CSS */
@@ -341,7 +341,7 @@ section span {
 .categoryTotals h4 {
     margin-left: 15px;
 }
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 500px){
     .moneyPic.one{
         
         left: 25px;
@@ -377,7 +377,7 @@ section span {
     #newEntry {
         position: absolute;
         right: 5px;
-        top: 245px;
+        top: 215px;
         width: 50%;
         height: 50vh;
     }
