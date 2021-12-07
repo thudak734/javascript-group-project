@@ -247,11 +247,6 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-h5 {
-    font-size: 20px;
-    text-align: center;
-}
-
 ul {
     display: block;
     padding-left: 0px;
@@ -301,29 +296,43 @@ header h2 {
 /* category totals CSS */
 .hideCategoryTotals {
     display: none;
+    margin: auto;
+    padding: 20px;
+    width: 95%;
     border: 2px #017054 solid;
     border-radius: 10px;
     background-image: linear-gradient(to right, #018884 , #017054);
     color: white;
-}
-
-.hide {
-    display: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.show {
-    display: block;
+    margin: auto;
+    text-align: center;
 }
 
 .showCategoryTotals {
+    margin: auto;
     border: 2px #017054 solid;
     border-radius: 10px;
+    width: 95%;
     background-image: linear-gradient(to right, #018884 , #017054);
     color: white;
-    display: block;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.innerCatTotals {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    padding-left: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+h5 {
+    font-size: 20px;
+    text-align: center;
+}
+
+h4 {
+    color: black;
 }
 
 .categoryTotals span {
