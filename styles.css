@@ -435,10 +435,9 @@ section span {
         right: 5px;
         top: 215px;
         width: 50%;
-        height: 50vh;
     }
     section{
-        margin-top: 150px;
+        margin-top: 160px;
         width: 50%;
     }
     section h3{
@@ -502,5 +501,6 @@ section span {
         right: 0;
         top: 750px;
         margin-left: 5px;
+        pointer-events: none;
     }
 }
