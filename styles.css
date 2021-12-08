@@ -449,7 +449,7 @@ section span {
     #newEntry {
         position: absolute;
         right: 5px;
-        top: 215px;
+        top: 265px;
         width: 50%;
     }
     section{
@@ -508,7 +508,7 @@ section span {
         max-width: 50%;
         position: absolute;
         right: 0;
-        top: 750px;
+        top: 805px;
         margin-left: 5px;
         pointer-events: none;
     }
