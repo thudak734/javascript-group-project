@@ -392,13 +392,13 @@ section span {
 @media only screen and (min-width: 275px){
     .moneyPic.one{
         left: 10px;
-        top: 125px;
+        top: 205px;
         height: 55px;
         width: 45px;
     }
     .moneyPic.two{
         right: 10px;
-        top: 125px;
+        top: 205px;
         height: 55px;
         width: 45px;
     }
