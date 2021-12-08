@@ -173,11 +173,13 @@ button.submit{
     display: inline-flex;
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
+    margin-top: 30px;
 }
 
 #dollarSign {
-    font-size: 50px;
+    font-size: 100px;
+    margin-top: 30px;
 }
 
 .headerShow {
@@ -259,6 +261,7 @@ select {
 header {
     display: none;
     text-align: center;
+    height: 140px;
     padding: 30px;
     margin: 0px;
     font-size: 25px;
