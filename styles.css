@@ -29,8 +29,8 @@ h1 {
     position: absolute;
     left: 10px;
     top: 125px;
-    height: 75px;
-    width: 65px;
+    height: 55px;
+    width: 45px;
 }
 .moneyPic.two{
     background: transparent;
@@ -38,8 +38,8 @@ h1 {
     transform: scaleX(-1);
     right: 10px;
     top: 125px;
-    height: 75px;
-    width: 65px;
+    height: 55px;
+    width: 45px;
 }
 button{
     background-color: #4CAF50; /* Green */
@@ -393,14 +393,14 @@ section span {
     .moneyPic.one{
         left: 10px;
         top: 125px;
-        height: 75px;
-        width: 65px;
+        height: 55px;
+        width: 45px;
     }
     .moneyPic.two{
         right: 10px;
         top: 125px;
-        height: 75px;
-        width: 65px;
+        height: 55px;
+        width: 45px;
     }
 }
 #myChart {
