@@ -6,11 +6,19 @@ body{
     font-weight: 300;
 }
 
-h1, h2, h3, h4, h5, h6, button {
+h1 {
+    font-size: 30px;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+h2, h3, h4, h5, h6, button {
     font-family: 'Archivo', sans-serif;
     font-weight: 300;
 }
 
+h1 {
+    font-size: 30px;
+}
 /* button {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -460,13 +468,6 @@ section span {
     .categoryTotals {
         width: 50%;
     }
-
-    .showCategoryTotals {
-        width: 95%;
-    }
-    .hideCategoryTotals {
-        width: 95%;
-    }
     li {
         margin-left: 100px;
     }
@@ -490,13 +491,13 @@ section span {
     .hideCategoryTotals{
         width: 45%;
         position: absolute;
-        top: 750px;
+        top: 805px;
         margin-right: 5px;
     }
     .showCategoryTotals{
         width: 50%;
         position: absolute;
-        top: 750px;
+        top: 805px;
     }
     #myChart{
         width: 50%;
