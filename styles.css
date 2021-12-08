@@ -390,6 +390,7 @@ section span {
     width:100%;
     max-width:600px;
     display: block;
+    pointer-events: none;
     }
 
 
